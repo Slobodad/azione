@@ -1,0 +1,348 @@
+@import "libs/swiper";
+
+.internal {
+    padding-bottom: 58px;
+    &__title {
+        margin-top: -3px;
+        margin-bottom: 30px;
+        padding-bottom: 11px;
+        position: relative;
+        h2 {
+            text-align: center;
+            font-family: 'Roboto-Light';
+            font-weight: 300;
+            font-size: 25px;
+            color: #2a2a2a;
+        }
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #e2e4e9;
+        }
+    }
+
+    .offer {
+        &__img {
+            margin-bottom: 12px;
+            width: 100%;
+            position: relative;
+            .offer__text {
+                position: absolute;
+                top: 11px;
+                left: 17px;
+                color:#1d1d1d;
+                h2 {
+                    font-family: 'AireBoldPro';
+                    font-weight: 700;
+                    font-size: 22px;
+                }
+                p {
+                    font-family: 'Acrom-bold';
+                    font-weight: 700;
+                    font-size: 15px;
+                    text-transform: uppercase;
+                }
+                span {
+                    display: block;
+                    font-family: 'Acrom-Regular';
+                    font-weight: 300;
+                    font-size: 12px;
+                }
+            }
+        }
+        &__timer {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            margin-bottom: 32px;
+            font-family: 'Roboto-Light';
+            font-weight: 300;
+            font-size: 12px;
+            text-align: center;
+            color: #919191;
+            span {
+                margin-right: 5px;
+            }
+        }
+        &__content {
+            margin-bottom: 35px;
+            .offer__title {
+                font-family: 'Roboto-Light';
+                font-size: 18px;
+                font-weight: 300;
+                color: #292929;
+            }
+            .offer__subtitle {
+                margin-bottom: 25px;
+                font-family: 'Roboto-Light';
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 24px;
+                color: #4c4c4c;
+            }
+            .offer__description {
+                font-family: 'Roboto-Light';
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 24px;
+                color: #4c4c4c;
+                span {
+                    display: block;
+                }
+            }
+        }
+        
+    }
+    .swiperOffer {
+        margin: 10px -10px 0;
+        padding: 0 10px;
+        .item__img{
+            height: 134px;
+            background-color: #f1f2f4;
+            position: relative;
+            img{
+                position: absolute;
+                max-width: 100%;
+                max-height: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            &:hover{
+                box-shadow: 0 3px 13px rgba(25, 23, 26, 0.15);
+                .addCart{
+                    display: block;
+                    position: absolute;
+                    z-index: 2;
+                    right: 10px;
+                    top: 10px;
+                    width: 40px;
+                    height: 40px;
+                    box-shadow: 0 7px 16px rgba(26, 59, 134, 0.14);
+                    background-color: #ffffff;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 40px;
+                    i{
+                        color: #5a4a8c;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .addCart{
+                display: none;
+            }
+        }
+        .item__link{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .item__text{
+            margin-top: 13px;
+            text-align: center;
+            a{  
+                padding: 0 25px;
+                display: block;
+                color: #2a2a2a;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            h4{
+                font-family: 'Roboto-Light';
+                font-weight: 300;
+                color: #b1afbf;
+                font-size: 12px;
+                margin: 4px 0 3px;
+            }
+            p{
+                color: #2a2a2a;
+                font-size: 12px;
+            }
+        }
+        .sw-button-prev,
+        .sw-button-next{
+            display: none;
+        }
+    }
+    
+}
+
+.etUnit {
+    margin: -3px;
+}
+.eTimer .etDays {
+    margin-right: 26px;
+    position: relative;
+}
+
+.eTimer .etDays .etSign {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -29px;
+    font-size: 12px !important;
+}
+
+.etSign {
+    display: none;
+    
+}
+
+.eTimer .etUnit .etNumber {
+    margin: 0 !important;
+}
+
+.etHours {
+    position: relative;
+    &::after {
+        content: ':';
+        position: absolute;
+        top: -1px;
+        right: -3px;
+    }
+}
+
+.etMinutes {
+    position: relative;
+    &::after {
+        content: ':';
+        position: absolute;
+        top: -1px;
+        right: -3px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .internal {
+        &__title {
+            &::after {
+                display: none;
+            }
+        }   
+    }
+    .swiperOffer {
+        .offer-slider__box {
+            .swiper-slide {
+                .item__img {
+                    width: 100%;
+                    height: 250px;
+                    img {
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .internal {
+        &__title {
+            margin-bottom: 57px;
+            h2 {
+                font-size: 30px;
+            }
+        }  
+
+        .offer {
+            &__wrapper {
+                margin-bottom: 63px;
+                display: flex;
+                justify-content: space-around;
+                position: relative;
+            }
+            &__img {
+                width: 49%;
+                .offer__text {
+                    top: 30px;
+                    left: 32px;
+                    h2 {
+                        margin-bottom: 10px;
+                        font-size: 36px;
+                    }
+                    p {
+                        font-size: 25px;
+                    }
+                    span {
+                        font-size: 18px;
+                    }
+                }
+            }
+            &__timer {
+                position: absolute;
+                bottom: -20px;
+                left: 51%;
+                font-size: 18px;
+            }
+            &__content {
+                width: 49%;
+                .offer__title {
+                    font-size: 23px;
+                }
+            }
+        }
+
+        .eTimer .etDays .etSign {
+            font-size: 18px !important;
+        }
+        .eTimer .etUnit .etNumber {
+            font-size: 18px !important;
+        }
+        .eTimer .etDays {
+            margin-right: 42px;
+        }
+        .eTimer .etDays .etSign {
+            right: -42px;
+        }
+
+        .pagination__list {
+            .pagination__item {
+                margin-right: 2px;
+            }
+        }
+        .swiperOffer {
+            .offer-slider__box {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                .swiper-slide {
+                    margin-bottom: 60px;
+                    width: 24%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1260px) {
+    .internal {
+        padding-bottom: 65px;
+        .swiperOffer {
+            .offer-slider__box {
+                .swiper-slide {
+                    margin-bottom: 68px;
+                    width: 24%;
+                    .item__img {
+                        width: 100%;
+                        height: 295px;
+                    }
+                    .item__text{
+                        margin-top: 24px;
+                        a,h4,p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

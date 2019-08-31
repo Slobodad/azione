@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Варианты доставки</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/delivery.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="flex-wrap">
+                    <ul>
+                        <li>
+                            <a href="delivery.html">Доставка и оплата</a>
+                        </li>
+                        <li>
+                            <a href="stock.html">Акции и скидки</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="signIn">
+                        <a href="javascript:void(0)" class="open-signIn"><span>Кабинет</span> <i class="icon-man"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="flex-wrap">
+                    <button class="toggle-menu">
+                        <span class="hamburger">
+                            <span class="sw-topper"></span>
+                            <span class="sw-bottom"></span>
+                            <span class="sw-footer"></span>
+                        </span>
+                    </button>
+                    <div class="header__logo">
+                        <a href="index.html">
+                            <img src="../img/logo.png" alt="logotype">
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <div class="form-input show" id="form-input">
+                            <input name="search" class="search-query" type="text">
+                            <button class="button"><i class="icon-search"></i></button>
+                        </div>
+                        <div class="showSearch"><i class="icon-search"></i></div>
+                    </div>
+                    <div class="header__menu">
+                        <div class="mobileClose"></div>
+                        <div class="wrapper">
+                            <a href="index.html" class="menu__logo">
+                                <img src="../img/logo-white.png" alt="logotype">
+                            </a>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="categories.html">Парфюмерия </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="categories.html">Женская парфюмерия</a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a href="categories.html">Новинки</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Распродажа!</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Наборы</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Миниатюры</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Пробники</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Тестеры</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Нишевая парфюмерия</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Арабская парфюмерия</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="categories.html">Мужская парфюмерия</a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a href="categories.html">Новинки</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Распродажа!</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Наборы</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Миниатюры</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Пробники</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Тестеры</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Нишевая парфюмерия</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="categories.html">Уход за лицом</a>
+                                    </li>
+                                    <li>
+                                        <a href="categories.html">Уход за телом</a>
+                                    </li>
+                                    <li>
+                                        <a href="categories.html">Ароматы для дома </a>
+                                    </li>
+                                    <li>
+                                        <a href="stock.html">Подарки и бонусы</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <ul class="innerMenu">
+                                <li>
+                                    <a href="javascript:void(0)">Акции и скидки</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__cart">
+                        <a href="javascript:void(0)" class="js-open-basket">
+                            <span class="label">Корзина</span>
+                            <i class="icon-cart"></i>
+                            <span class="cartAmount">3</span>
+                        </a>
+                    </div>
+                    <div class="signIn">
+                        <a href="javascript:void(0)" class="open-signIn"><i class="icon-man"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- popups -->
+    <!-- .closeBtn - закрывает попап -->
+    <!-- .open-* - открывает попап -->
+
+    <div id="loginModel" class="login modal fade overlay-signIn overlayPopup" role="dialog">
+        <div class="close"></div>
+        <div class="content signIn__popup">
+            <span class="close-popup closeBtn"></span>
+            <!-- BEGIN LOGIN FORM -->
+            <form class="login-form content-wrapper" action="{{ action }}" method="post" novalidate="novalidate" style="display: block;">
+
+                <h3 class="form-title font-green">Войти в личный кабинет</h3>
+                <div class="alert alert-danger display-hide" style="display: none;">
+                    <button class="close" data-close="alert"></button>
+                    <span> Enter your email and password. </span>
+                </div>
+                <input type="hidden" name="ajax" value="true" />
+                <div class="form-group form-input">
+                    <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                    <label class="control-label visible-ie8 visible-ie9"></label>
+                    <input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email"> </div>
+                <div class="form-group form-input">
+                    <label class="control-label visible-ie8 visible-ie9"></label>
+                    <input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="Пароль" name="password"> </div>
+                <div class="form-actions form-button">
+                    <button type="button" class="btn green uppercase" id="loginBtn">Войти</button>
+
+                </div>
+                <div class="create-account">
+                    <p class="form-bottom">
+                        <a href="javascript:;" id="forget-password" class="forget-password">Забыл пароль?</a>
+                        <a href="javascript:;" id="register-btn" class="uppercase closeBtn open-checkIn">Регистрация</a>
+                    </p>
+                </div>
+            </form>
+            <!-- END LOGIN FORM -->
+            <!-- BEGIN FORGOT PASSWORD FORM -->
+
+            <!-- <form class="forget-form" action="{{ forgotten }}" method="post" novalidate="novalidate">
+            <h3 class="font-green">Forget Password ?</h3>
+            <div class="alert alert-danger display-hide" style="display: none;">
+                <button class="close" data-close="alert"></button>
+                <span>  </span>
+            </div>
+            <div class="alert alert-success display-hide" style="display: none;">
+                <button class="close" data-close="alert"></button>
+                <span></span>
+            </div>
+            <input type="hidden" name="ajax" value="true"/>
+            <div class="form-group">
+                <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email"> </div>
+            <div class="form-actions">
+                <button type="button" id="back-btn" class="btn green btn-outline">Back</button>
+                <button type="submit" class="btn btn-success uppercase pull-right" id="forget-submit-btn">Submit</button>
+            </div>
+        </form> -->
+
+            <!-- END FORGOT PASSWORD FORM -->
+            <!-- BEGIN REGISTRATION FORM -->
+
+            <form class="register-form registr-wrapper" action="{{ register }}" method="post" novalidate="novalidate" style="display: none;">
+                <h3 class="font-green">Sign Up</h3>
+                <div class="alert alert-danger display-hide" style="display: none;">
+                    <button class="close" data-close="alert"></button>
+                    <span> Enter your email and password. </span>
+                </div>
+                <input type="hidden" name="ajax" value="true" />
+                <div class="form-group col-md-6 padding-2">
+                    <label class="control-label visible-ie8 visible-ie9">First Name</label>
+                    <input class="form-control placeholder-no-fix" type="text" placeholder="First Name" name="firstname">
+                </div>
+                <div class="form-group col-md-6 padding-2">
+                    <label class="control-label visible-ie8 visible-ie9">Last Name</label>
+                    <input class="form-control placeholder-no-fix" type="text" placeholder="Last Name" name="lastname">
+                </div>
+                <div class="form-group col-md-6 padding-2">
+                    <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                    <label class="control-label visible-ie8 visible-ie9">Email</label>
+                    <input class="form-control placeholder-no-fix" type="text" placeholder="Email" name="email"> </div>
+                <div class="form-group col-md-6 padding-2">
+                    <label class="control-label visible-ie8 visible-ie9">Telephone</label>
+                    <input class="form-control placeholder-no-fix" type="text" placeholder="Telephone" name="telephone">
+                </div>
+                <div class="form-group col-md-6 padding-2">
+                    <label class="control-label visible-ie8 visible-ie9">Password</label>
+                    <input class="form-control placeholder-no-fix" type="password" autocomplete="off" id="register_password" placeholder="Password" name="password"> </div>
+                <div class="form-group col-md-6 padding-2">
+                    <label class="control-label visible-ie8 visible-ie9">Re-type Your Password</label>
+                    <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Re-type Your Password" name="confirm"> </div>
+                <div class="form-group margin-top-20 margin-bottom-20">
+                    <label class="mt-checkbox mt-checkbox-outline">
+                        <input type="checkbox" name="agree"> I agree to the
+                        <a href="javascript:;">Terms of Service </a> &amp;
+                        <a href="javascript:;">Privacy Policy </a>
+                        <span></span>
+                    </label>
+                    <div id="register_tnc_error"> </div>
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="register-back-btn" class="btn green btn-outline">Back</button>
+                    <button type="button" id="register-submit-btn" class="btn btn-success uppercase pull-right">Submit</button>
+                </div>
+            </form>
+
+            <!-- END REGISTRATION FORM -->
+        </div>
+
+    </div>
+
+    <div id="loginModel" class="login modal fade overlay-checkIn overlayPopup" role="dialog">
+        <div class="close"></div>
+        <div class="content checkIn__popup">
+            <span class="close-popup closeBtn"></span>
+            <!-- BEGIN REGISTRATION FORM -->
+
+            <form class="register-form registr-wrapper" action="{{ register }}" method="post" novalidate="novalidate" style="display: none;">
+                <h3 class="font-green">Регистрация нового пользователя</h3>
+                <div class="alert alert-danger display-hide" style="display: none;">
+                    <button class="close" data-close="alert"></button>
+                    <span> Enter your email and password. </span>
+                </div>
+                <input type="hidden" name="ajax" value="true" />
+                <div class="flex-wrap">
+                    <div class="form-group col-md-6 padding-2 form-input">
+                        <label class="control-label visible-ie8 visible-ie9">Ваше имя*</label>
+                        <input class="form-control placeholder-no-fix" type="text" placeholder="" name="firstname"> </div>
+                    <div class="form-group col-md-6 padding-2 form-input">
+                        <label class="control-label visible-ie8 visible-ie9">Ваша Фамилия*</label>
+                        <input class="form-control placeholder-no-fix" type="text" placeholder="" name="lastname"> </div>
+                    <div class="form-group col-md-6 padding-2 form-input">
+                        <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                        <label class="control-label visible-ie8 visible-ie9">E-mail*</label>
+                        <input class="form-control placeholder-no-fix" type="text" placeholder="" name="email"> </div>
+                    <div class="form-group col-md-6 padding-2 form-input">
+                        <label class="control-label visible-ie8 visible-ie9">Телефон*</label>
+                        <input class="form-control placeholder-no-fix" type="text" placeholder="" name="telephone"> </div>
+                    <div class="form-group col-md-6 padding-2 form-input">
+                        <label class="control-label visible-ie8 visible-ie9">Пароль*</label>
+                        <input class="form-control placeholder-no-fix" type="password" autocomplete="off" id="register_password" placeholder="" name="password"> </div>
+                    <div class="form-group col-md-6 padding-2 form-input">
+                        <label class="control-label visible-ie8 visible-ie9">Повтор пароля*</label>
+                        <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="" name="confirm"> </div>
+                    <div class="form-group margin-top-20 margin-bottom-20 registr-security">
+                        <label class="mt-checkbox mt-checkbox-outline">
+                            <input type="checkbox" name="agree"> I agree to the
+                            <a href="javascript:;">Terms of Service </a> &amp;
+                            <a href="javascript:;">Privacy Policy </a>
+                            <span></span>
+                        </label>
+                        <div id="register_tnc_error"> </div>
+                    </div>
+                </div>
+                <div class="form-actions form-button">
+                    <button type="button" id="register-back-btn" class="btn green btn-outline btn-hide">Back</button>
+                    <button type="button" id="register-submit-btn" class="btn btn-success uppercase pull-right">Зарегистрироваться</button>
+                </div>
+            </form>
+
+            <!-- END REGISTRATION FORM -->
+        </div>
+
+    </div>
+
+    <div class="basket-popup">
+        <div class="basket-box">
+            <h3 class="basket-title">
+                Корзина
+            </h3>
+            <div class="basket-list swiper-container">
+                <ul class="swiper-wrapper dropdown-menu pull-right">
+                    <li class="swiper-slide">
+                        <div class="item__img">
+                            <a href="product-card.html" class="item__link"></a>
+                            <img src="../img/item1.png" alt="">
+                        </div>
+                        <div class="item__text">
+                            <a href="product-card.html">Moschino Funny</a>
+                            <h4>Туалетная вода</h4>
+                            <div class="item__price">
+                                <span>25 мл.</span>
+                                <span>4 500 руб.</span>
+                            </div>
+                            <div class="request__number">
+                                <a href="javascript:void(0)" class="minus">-</a>
+                                <input type="text" value="1" size="1">
+                                <a href="javascript:void(0)" class="plus">+</a>
+                                <a href="javascript:void(0)" class="request__close">
+                                    <img src="../img/close-1.png" alt="close">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="item__img">
+                            <a href="product-card.html" class="item__link"></a>
+                            <img src="../img/item2.png" alt="">
+
+                        </div>
+                        <div class="item__text">
+                            <a href="product-card.html">Moschino Funny</a>
+                            <h4>Туалетная вода</h4>
+                            <div class="item__price">
+                                <span>25 мл.</span>
+                                <span>4 500 руб.</span>
+                            </div>
+                            <div class="request__number">
+                                <a href="javascript:void(0)" class="minus">-</a>
+                                <input type="text" value="1" size="1">
+                                <a href="javascript:void(0)" class="plus">+</a>
+                                <a href="javascript:void(0)" class="request__close">
+                                    <img src="../img/close-1.png" alt="close">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="item__img">
+                            <a href="product-card.html" class="item__link"></a>
+                            <img src="../img/item1.png" alt="">
+
+                        </div>
+                        <div class="item__text">
+                            <a href="product-card.html">Moschino Funny</a>
+                            <h4>Туалетная вода</h4>
+                            <div class="item__price">
+                                <span>25 мл.</span>
+                                <span>4 500 руб.</span>
+                            </div>
+                            <div class="request__number">
+                                <a href="javascript:void(0)" class="minus">-</a>
+                                <input type="text" value="1" size="1">
+                                <a href="javascript:void(0)" class="plus">+</a>
+                                <a href="javascript:void(0)" class="request__close">
+                                    <img src="../img/close-1.png" alt="close">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="item__img">
+                            <a href="product-card.html" class="item__link"></a>
+                            <img src="../img/item2.png" alt="">
+
+                        </div>
+                        <div class="item__text">
+                            <a href="product-card.html">Moschino Funny</a>
+                            <h4>Туалетная вода</h4>
+                            <div class="item__price">
+                                <span>25 мл.</span>
+                                <span>4 500 руб.</span>
+                            </div>
+                            <div class="request__number">
+                                <a href="javascript:void(0)" class="minus">-</a>
+                                <input type="text" value="1" size="1">
+                                <a href="javascript:void(0)" class="plus">+</a>
+                                <a href="javascript:void(0)" class="request__close">
+                                    <img src="../img/close-1.png" alt="close">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="basket-sum">
+                <span>Итого:</span>
+                <span>9000 руб.</span>
+            </div>
+            <div class="basket-btn">
+                <a href="javascript:void(0)" class="continue-shopping js-basket-close">Продолжить покупку</a>
+                <a href="javascript:void(0)" class="checkout js-basket-close">Оформить заказ</a>
+            </div>
+            <a href="javascript:void(0)" class="basket__close js-basket-close">
+                <img src="../img/close-1.png" alt="close">
+            </a>
+        </div>
+
+    </div>
+
+    <div class="bread-crumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><span>Доставка и оплата</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="delivery" id="delivery">
+        <div class="container">
+            <div class="delivery__title">
+                <h2>
+                    Варианты доставки
+                </h2>
+            </div>
+            <div class="tabs__wrapper js-tabs-wrapper">
+                <div class="tabs__item tabs__item--active js-tab-item" data-tab="first">
+                    <a class="tabs__btn" href="javascript:void(0)">
+                        <i class="icon-004-truck"></i>
+                        <span>
+                            Самовывоз
+                        </span>
+                    </a>
+                </div>
+                <div class="tabs__item js-tab-item" data-tab="second">
+                    <a class="tabs__btn" href="javascript:void(0)">
+                        <i class="icon-001-gift"></i>
+                        <span>
+                            Бесплатно
+                            курьером
+                        </span>
+                    </a>
+                </div>
+                <div class="tabs__item js-tab-item" data-tab="third">
+                    <a class="tabs__btn" href="javascript:void(0)">
+                        <i class="icon-003-track"></i>
+                        <span>
+                            Курьером по
+                            России
+                        </span>
+                    </a>
+                </div>
+                <div class="tabs__item js-tab-item" data-tab="fourth">
+                    <a class="tabs__btn" href="javascript:void(0)">
+                        <i class="icon-002-shipment"></i>
+                        <span>
+                            Курьером по
+                            СНГ
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <div class="content__wraper">
+                <div class="content__item js-content-item content__item--active" id="delivery-first">
+                    <div class="content__title">
+                        <h3>
+                            Самовывоз
+                        </h3>
+                    </div>
+                    <div class="content__text-wrapper">
+                        <div class="content__delivery">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, aliquam. Eveniet
+                                nisi a
+                                ratione minima impedit labore. Esse, nihil atque. Repellat nulla asperiores optio
+                                consectetur
+                                hic cum unde sapiente excepturi ad rerum assumenda quia, porro accusantium molestias
+                                voluptas
+                                nisi corporis.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sequi sint nam dolore ipsa
+                                consequatur optio incidunt nisi ipsum voluptatem.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod perspiciatis, id nihil
+                                optio
+                                possimus suscipit quis iusto esse dignissimos reprehenderit? Nemo, illo ipsam
+                                repellendus
+                                veniam
+                                sequi cum? Suscipit, maxime error?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla porro quas veniam
+                                excepturi
+                                quibusdam laudantium illo recusandae pariatur repudiandae deleniti.
+                            </p>
+                        </div>
+                        <div class="content__payment">
+                            <h3>
+                                Оплата
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aut dolore porro vel
+                                velit
+                                illo
+                                voluptatem nulla culpa autem et eum natus totam placeat architecto, pariatur dolorem
+                                perspiciatis aspernatur sunt modi optio libero est nam praesentium sapiente. Reiciendis,
+                                tenetur. Ipsum optio maiores facere perferendis recusandae illum vitae quo officia
+                                nostrum.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad qui adipisci veritatis neque
+                                nisi
+                                dignissimos? Ab fugit dolorem facilis eaque.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi consequatur odio
+                                architecto
+                                eligendi iste minus ea numquam ex tenetur provident sequi molestias facilis quasi,
+                                cumque
+                                quas
+                                illum nulla placeat id.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__item js-content-item" id="delivery-second">
+                    <div class="content__title">
+                        <h3>
+                            Бесплатно
+                            курьером
+                        </h3>
+                    </div>
+                    <div class="content__text-wrapper">
+                        <div class="content__delivery">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, aliquam. Eveniet
+                                nisi a
+                                ratione minima impedit labore. Esse, nihil atque. Repellat nulla asperiores optio
+                                consectetur
+                                hic cum unde sapiente excepturi ad rerum assumenda quia, porro accusantium molestias
+                                voluptas
+                                nisi corporis.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sequi sint nam dolore ipsa
+                                consequatur optio incidunt nisi ipsum voluptatem.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod perspiciatis, id nihil
+                                optio
+                                possimus suscipit quis iusto esse dignissimos reprehenderit? Nemo, illo ipsam
+                                repellendus
+                                veniam
+                                sequi cum? Suscipit, maxime error?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla porro quas veniam
+                                excepturi
+                                quibusdam laudantium illo recusandae pariatur repudiandae deleniti.
+                            </p>
+                        </div>
+                        <div class="content__payment">
+                            <h3>
+                                Оплата
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aut dolore porro vel
+                                velit
+                                illo
+                                voluptatem nulla culpa autem et eum natus totam placeat architecto, pariatur dolorem
+                                perspiciatis aspernatur sunt modi optio libero est nam praesentium sapiente. Reiciendis,
+                                tenetur. Ipsum optio maiores facere perferendis recusandae illum vitae quo officia
+                                nostrum.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad qui adipisci veritatis neque
+                                nisi
+                                dignissimos? Ab fugit dolorem facilis eaque.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi consequatur odio
+                                architecto
+                                eligendi iste minus ea numquam ex tenetur provident sequi molestias facilis quasi,
+                                cumque
+                                quas
+                                illum nulla placeat id.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__item js-content-item" id="delivery-third">
+                    <div class="content__title">
+                        <h3>
+                            Курьером по России
+                        </h3>
+                    </div>
+                    <div class="content__text-wrapper">
+                        <div class="content__delivery">
+                            <p>
+                                Доставка курьерской службой компаний-перевозчиков в города России при сумме заказа до 3
+                                000
+                                рубстоит всего 200 руб.,
+                                <span>
+                                    при сумме заказа от 6 000 до
+                                    10 000 руб стоит всего 100 руб, при сумме заказа свыше 15 000 руб - доставка
+                                    бесплатная!
+                                </span>
+                            </p>
+                            <p>
+                                Ваш заказ будет отправлен на следующий день после заказа. Доставка занимает от 1 до 3
+                                дней.
+                            </p>
+                            <p>
+                                <span>
+                                    Никаких скрытых платежей, оплаты услуг транспортной компании, платы за перевод
+                                    денег, комиссий и
+                                    прочее! Вы оплачиваете только сумму вашего заказа.
+                                </span>
+                            </p>
+                            <p>
+                                Никаких скрытых платежей, оплаты услуг транспортной компании, платы за перевод денег,
+                                комиссий и
+                                прочее! Вы оплачиваете только сумму вашего заказа.
+                            </p>
+                        </div>
+                        <div class="content__payment">
+                            <h3>
+                                Оплата
+                            </h3>
+                            <p>
+                                Оплатить заказ вы сможете при помощи карт VISA/Mastercard во время оформления заказа или
+                                наличными, передав их курьеру во время доставки. После оплаты заказа, пожалуйста,
+                                сверьте
+                                содержимое с накладной в присутствии курьера. В случае, если доставленный товар не будет
+                                соответствовать вашему заказу, курьер по вашей просьбе заберет такой товар и вернет вам
+                                оплату
+                                за него.
+                            </p>
+                            <p>
+                                При оплате картой указанный в заказе получатель должен будет показать документ,
+                                удостоверяющий
+                                личность.
+                            </p>
+                            <p>
+                                Также обратите, пожалуйста, внимание: согласно Постановлению Правления НБУ № 388, при
+                                оплате
+                                заказа на сумму от 15 000 руб представитель службы «Почта России» может попросить вас
+                                предоставить копию страниц паспорта, удостоверяющих личность получателя.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="content__item js-content-item" id="delivery-fourth">
+                    <div class="content__title">
+                        <h3>
+                            Курьером по
+                            СНГ
+                        </h3>
+                    </div>
+                    <div class="content__text-wrapper">
+                        <div class="content__delivery">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, aliquam. Eveniet
+                                nisi a
+                                ratione minima impedit labore. Esse, nihil atque. Repellat nulla asperiores optio
+                                consectetur
+                                hic cum unde sapiente excepturi ad rerum assumenda quia, porro accusantium molestias
+                                voluptas
+                                nisi corporis.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sequi sint nam dolore ipsa
+                                consequatur optio incidunt nisi ipsum voluptatem.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod perspiciatis, id nihil
+                                optio
+                                possimus suscipit quis iusto esse dignissimos reprehenderit? Nemo, illo ipsam
+                                repellendus
+                                veniam
+                                sequi cum? Suscipit, maxime error?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla porro quas veniam
+                                excepturi
+                                quibusdam laudantium illo recusandae pariatur repudiandae deleniti.
+                            </p>
+                        </div>
+                        <div class="content__payment">
+                            <h3>
+                                Оплата
+                            </h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aut dolore porro vel
+                                velit
+                                illo
+                                voluptatem nulla culpa autem et eum natus totam placeat architecto, pariatur dolorem
+                                perspiciatis aspernatur sunt modi optio libero est nam praesentium sapiente. Reiciendis,
+                                tenetur. Ipsum optio maiores facere perferendis recusandae illum vitae quo officia
+                                nostrum.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad qui adipisci veritatis neque
+                                nisi
+                                dignissimos? Ab fugit dolorem facilis eaque.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi consequatur odio
+                                architecto
+                                eligendi iste minus ea numquam ex tenetur provident sequi molestias facilis quasi,
+                                cumque
+                                quas
+                                illum nulla placeat id.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">Парфюмерия </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Уход за лицом </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Уход за телом </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Ароматы для дома </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Подарки и бонусы</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Доставка и оплата </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Акции и скидки </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__social">
+                    <p>Мы в соцсетях</p>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)"><i class="icon-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><i class="icon-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><i class="icon-vk"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="footer__copy">
+                    © Все права защищены, 2019
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/jquery.min.js"></script>
+
+    <script src="../js/script.min.js"></script>
+    <script src="../js/delivery.min.js"></script>
+</body>
+
+</html>

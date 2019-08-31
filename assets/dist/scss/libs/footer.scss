@@ -1,0 +1,119 @@
+@import "flexbox";
+
+.footer{
+    background-color: #1f1e20;
+    padding: 35px 0 30px;
+    &__menu{
+        padding-bottom: 20px;
+        border-bottom: 1px solid #2c2a2e;
+        ul{
+            @include flexbox;
+            @include flex-wrap(wrap);
+            @include justify-content(space-between);
+            li{
+                width: calc(50% - 10px);
+                margin-bottom: 10px;
+                a{
+                    color: #f1f2f4;
+                    font-size: 14px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    &__bottom{
+        margin-top: 35px;
+    }
+    &__social{
+        text-align: center;
+        margin-bottom: 25px;
+        p{
+            color: #aeadb9;
+            font-size: 14px;
+        }
+        ul{
+            @include flexbox;
+            @include justify-content(center);
+            margin-top: 15px;
+            li{
+                margin-right: 8px;
+                &:last-of-type{
+                    margin-right: 0;
+                }
+                a{
+                    display: inline-block;
+                    &:hover{
+                        i{
+                            color: #5a4a8c;
+                        }
+                    }
+                }
+                i{
+                    font-size: 24px;
+                    color: #a39ea9;
+                }
+            }
+        }
+    }
+    &__copy{
+        text-align: center;
+        color: #aeadb9;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .footer{
+        &__menu {
+            ul {
+                li {
+                    width: calc(25% - 10px);
+                }
+            }
+        }
+        &__bottom{
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(space-between);
+        }
+        &__social{
+            @include order(2);
+            @include flexbox;
+            @include align-items(center);
+            margin: 0;
+            ul{
+                margin: 0 0 0 19px;
+            }
+        }
+        &__copy{
+            @include order(1);
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .footer{
+        &__menu {
+            ul {
+                li {
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1260px){
+    .footer{
+        padding-top: 43px;
+        &__menu{
+            padding: 0 44px 20px;
+        }
+        &__bottom{
+            padding: 18px 44px 0;
+            margin: 0;
+        }
+    }
+}

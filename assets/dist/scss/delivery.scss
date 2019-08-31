@@ -1,0 +1,246 @@
+// Delivery
+@import "libs/swiper";
+
+.delivery {
+    padding-bottom: 38px;
+    &__title {
+        margin-top: -3px;
+        margin-bottom: 45px;
+        padding-bottom: 11px;
+        position: relative;
+        h2 {
+            text-align: center;
+            font-family: 'Roboto-Light';
+            font-weight: 300;
+            font-size: 25px;
+            color: #2a2a2a;
+        }
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #e2e4e9;
+        }
+    }
+    .tabs__wrapper {
+        margin-bottom: 41px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .tabs__item {
+            margin-bottom: 13px;
+            width: 47%;
+            background-color: #f1f2f4;
+            .tabs__btn {
+                padding: 6px 13px;
+                width: 100%;
+                height: 100%;
+                display: block;
+                i {
+                    margin: 0 auto;
+                    margin-bottom: 3px;
+                    padding-top: 6px;
+                    width: 63px;
+                    height: 63px;
+                    font-size: 43px;
+                    text-align: center;
+                    display: block;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    color: #2a2a2a;
+                }
+                span {
+                    display: block;
+                    font-family: 'Roboto-Light';
+                    font-size: 18px;
+                    font-weight: 300;
+                    text-align: center;
+                    color: #2a2a2a;
+                }
+            }
+        }
+        .tabs__item--active {
+            .tabs__btn {
+                i {
+                    color: #5a4a8c;
+                }
+                span {
+                    color: #5a4a8c;
+                }
+            }
+        }
+    }
+    .content {
+        &__item {
+        display: none;
+        }
+        &__item--active {
+            display: block;
+        }
+        &__title {
+            margin-bottom: 26px;
+            padding-bottom: 13px;
+            position: relative;
+            h3 {
+                font-family: 'Roboto-Regular';
+                font-weight: 400;
+                font-size: 20px;
+                color: #4c4c4c;
+            }
+            &::after{
+                content: '';
+                width: 100%;
+                height: 1px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #e2e4e9;
+            }
+        }
+        &__delivery {
+            margin-bottom: 45px;
+            p {
+                margin-bottom: 20px;
+                font-family: 'Roboto-Light';
+                font-size: 18px;
+                line-height: 20px;
+                color: #4f4f4f;
+            }
+            span {
+                font-family: 'Roboto-Medium';
+                font-weight: 500;
+            }
+        }
+        &__payment {
+            h3 {
+                margin-bottom: 25px;
+                padding-bottom: 13px;
+                position: relative;
+                font-family: 'Roboto-Regular';
+                font-weight: 400;
+                font-size: 20px;
+                color: #4c4c4c;
+                &::after{
+                    content: '';
+                    width: 100%;
+                    height: 1px;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #e2e4e9;
+                }
+            }
+            p {
+                margin-bottom: 20px;
+                font-family: 'Roboto-Light';
+                font-size: 18px;
+                line-height: 20px;
+                color: #4f4f4f;
+            }
+            
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .delivery {
+        &__title {
+            &::after {
+                display: none;
+            }
+        }   
+        .tabs__wrapper {
+            .tabs__item {
+                width: 24%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .delivery{
+        .tabs__wrapper {
+            justify-content: space-around;
+            .tabs__item {
+                width: 20%;
+                .tabs__btn {
+                    padding: 25px 13px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1260px) {
+    .delivery {
+        padding-bottom: 109px;
+        &__title {
+            margin-bottom: 63px;
+            h2 {
+                font-size: 30px;
+            }
+        } 
+        .tabs__wrapper {
+            margin-bottom: 31px;
+            justify-content: flex-start;
+            .tabs__item {
+                margin-right: 20px;
+                width: 295px;
+                .tabs__btn {
+                    padding: 40px 0;
+                    i {
+                        margin-bottom: 15px;
+                        padding-top: 10px;
+                        width: 88px;
+                        height: 88px;
+                        font-size: 61px;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .content {
+            &__title {
+                margin-bottom: 30px;
+                padding-bottom: 24px;
+                h3 {
+                    font-size: 16px;
+                }
+                &::after{
+                    height: 2px;
+                    background-color: #242424;
+                }
+            }
+
+            &__text-wrapper {
+                display: flex;
+                justify-content: space-between;
+            }
+            &__delivery {
+                width: 49%;
+                p {
+                    font-size: 16px;
+                }
+            }
+            &__payment {
+                width: 49%;
+                h3 {
+                    display: none;
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

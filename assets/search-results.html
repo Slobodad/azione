@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Результаты поиска</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/search-results.css">
+</head>
+<body>
+
+<!-- build:section layout.header-->
+<!-- /build -->
+<!-- build:section layout.popups-->
+<!-- /build -->
+
+<div class="bread-crumbs">
+    <div class="container">
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><span>Поиск</span></li>
+        </ul>
+    </div>
+</div>
+
+<section class="results">
+    <div class="container">
+        <div class="results__heading">
+            <h2>Результаты поиска</h2>
+            <p>по запросу «Cocolady Black Crystal».</p>
+            <p>Найдено 4 товара.</p>
+        </div>
+        <div class="results__mobile-sorting">
+                <button class="results__btn js-open-popup">Сортировать</button>
+                <ul class="results__list">
+                    <li class="results__item">
+                        <span>Сортировка</span>
+                        <button class="js-close-popup">
+                            <img src="../img/close.png" alt="close">
+                        </button>
+                    </li>
+                    <li class="results__item" data-results="name">
+                        <a href="javascript:void(0)" class="js-popup-link">
+                           <span>Имени</span> <i class="icon-correct"></i> 
+                        </a>
+                    </li>
+                    <li class="results__item results__item--active" data-results="price">
+                        <a href="javascript:void(0)" class="js-popup-link">
+                           <span>Цене</span> <i class="icon-correct"></i> 
+                        </a>
+                    </li>
+                    <li class="results__item" data-results="popularity">
+                        <a href="javascript:void(0)" class="js-popup-link">
+                           <span>Популярности</span> <i class="icon-correct"></i> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        <ul class="results__sorting">
+            <li class="label">
+                Сортировать по:
+            </li>
+            <li class="active">
+                <a href="javascript:void(0)">имени</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">цене</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">популярности</a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="up"><i class="icon-left"></i></span>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <span class="down"><i class="icon-left"></i></span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="results__items">
+            <div class="results__item">
+                <div class="item__img">
+                    <a href="product-card.html" class="item__link"></a>
+                    <img src="../img/item1.png" alt="">
+                    <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                </div>
+                <div class="item__text">
+                    <a href="product-card.html">Cocolady Black Crystal</a>
+                    <h4>Туалетная вода</h4>
+                    <p>4 500 руб.</p>
+                </div>
+            </div>
+            <div class="results__item">
+                <div class="item__img">
+                    <a href="product-card.html" class="item__link"></a>
+                    <img src="../img/item2.png" alt="">
+                    <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                </div>
+                <div class="item__text">
+                    <a href="product-card.html">Cocolady Black Crystal</a>
+                    <h4>Туалетная вода</h4>
+                    <p>4 500 руб.</p>
+                </div>
+            </div>
+            <div class="results__item">
+                <div class="item__img">
+                    <a href="product-card.html" class="item__link"></a>
+                    <img src="../img/item3.png" alt="">
+                    <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                </div>
+                <div class="item__text">
+                    <a href="product-card.html">Cocolady Black Crystal</a>
+                    <h4>Туалетная вода</h4>
+                    <p>4 500 руб.</p>
+                </div>
+            </div>
+            <div class="results__item">
+                <div class="item__img">
+                    <a href="product-card.html" class="item__link"></a>
+                    <img src="../img/item4.png" alt="">
+                    <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                </div>
+                <div class="item__text">
+                    <a href="product-card.html">Cocolady Black Crystal</a>
+                    <h4>Туалетная вода</h4>
+                    <p>4 500 руб.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- build:section layout.footer-->
+<!-- /build -->
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/swiper.min.js"></script>
+
+<script src="../js/script.min.js"></script>
+<script src="../js/search-results.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Azione</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="flex-wrap">
+                    <ul>
+                        <li>
+                            <a href="delivery.html">Доставка и оплата</a>
+                        </li>
+                        <li>
+                            <a href="stock.html">Акции и скидки</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="signIn">
+                        <a href="javascript:void(0)" class="open-signIn"><span>Кабинет</span> <i class="icon-man"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="flex-wrap">
+                    <button class="toggle-menu">
+                        <span class="hamburger">
+                            <span class="sw-topper"></span>
+                            <span class="sw-bottom"></span>
+                            <span class="sw-footer"></span>
+                        </span>
+                    </button>
+                    <div class="header__logo">
+                        <a href="index.html">
+                            <img src="../img/logo.png" alt="logotype">
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <div class="form-input show" id="form-input">
+                            <input name="search" class="search-query" type="text">
+                            <button class="button"><i class="icon-search"></i></button>
+                        </div>
+                        <div class="showSearch"><i class="icon-search"></i></div>
+                    </div>
+                    <div class="header__menu">
+                        <div class="mobileClose"></div>
+                        <div class="wrapper">
+                            <a href="index.html" class="menu__logo">
+                                <img src="../img/logo-white.png" alt="logotype">
+                            </a>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="categories.html">Парфюмерия </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="categories.html">Женская парфюмерия</a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a href="categories.html">Новинки</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Распродажа!</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Наборы</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Миниатюры</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Пробники</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Тестеры</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Нишевая парфюмерия</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Арабская парфюмерия</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="categories.html">Мужская парфюмерия</a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a href="categories.html">Новинки</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Распродажа!</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Наборы</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Миниатюры</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Пробники</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Тестеры</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Нишевая парфюмерия</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="categories.html">Уход за лицом</a>
+                                    </li>
+                                    <li>
+                                        <a href="categories.html">Уход за телом</a>
+                                    </li>
+                                    <li>
+                                        <a href="categories.html">Ароматы для дома </a>
+                                    </li>
+                                    <li>
+                                        <a href="stock.html">Подарки и бонусы</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <ul class="innerMenu">
+                                <li>
+                                    <a href="javascript:void(0)">Акции и скидки</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__cart">
+                        <a href="javascript:void(0)" class="js-open-basket">
+                            <span class="label">Корзина</span>
+                            <i class="icon-cart"></i>
+                            <span class="cartAmount">3</span>
+                        </a>
+                    </div>
+                    <div class="signIn">
+                        <a href="javascript:void(0)" class="open-signIn"><i class="icon-man"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- popups -->
+    <!-- .closeBtn - закрывает попап -->
+    <!-- .open-* - открывает попап -->
+
+    <div id="loginModel" class="login modal fade overlay-signIn overlayPopup" role="dialog">
+        <div class="close"></div>
+        <div class="content signIn__popup">
+            <span class="close-popup closeBtn"></span>
+            <!-- BEGIN LOGIN FORM -->
+            <form class="login-form content-wrapper" action="{{ action }}" method="post" novalidate="novalidate" style="display: block;">
+
+                <h3 class="form-title font-green">Войти в личный кабинет</h3>
+                <div class="alert alert-danger display-hide" style="display: none;">
+                    <button class="close" data-close="alert"></button>
+                    <span> Enter your email and password. </span>
+                </div>
+                <input type="hidden" name="ajax" value="true" />
+                <div class="form-group form-input">
+                    <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                    <label class="control-label visible-ie8 visible-ie9"></label>
+                    <input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email"> </div>
+                <div class="form-group form-input">
+                    <label class="control-label visible-ie8 visible-ie9"></label>
+                    <input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="Пароль" name="password"> </div>
+                <div class="form-actions form-button">
+                    <button type="button" class="btn green uppercase" id="loginBtn">Войти</button>
+
+                </div>
+                <div class="create-account">
+                    <p class="form-bottom">
+                        <a href="javascript:;" id="forget-password" class="forget-password">Забыл пароль?</a>
+                        <a href="javascript:;" id="register-btn" class="uppercase closeBtn open-checkIn">Регистрация</a>
+                    </p>
+                </div>
+            </form>
+            <!-- END LOGIN FORM -->
+            <!-- BEGIN FORGOT PASSWORD FORM -->
+
+            <!-- <form class="forget-form" action="{{ forgotten }}" method="post" novalidate="novalidate">
+            <h3 class="font-green">Forget Password ?</h3>
+            <div class="alert alert-danger display-hide" style="display: none;">
+                <button class="close" data-close="alert"></button>
+                <span>  </span>
+            </div>
+            <div class="alert alert-success display-hide" style="display: none;">
+                <button class="close" data-close="alert"></button>
+                <span></span>
+            </div>
+            <input type="hidden" name="ajax" value="true"/>
+            <div class="form-group">
+                <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email"> </div>
+            <div class="form-actions">
+                <button type="button" id="back-btn" class="btn green btn-outline">Back</button>
+                <button type="submit" class="btn btn-success uppercase pull-right" id="forget-submit-btn">Submit</button>
+            </div>
+        </form> -->
+
+            <!-- END FORGOT PASSWORD FORM -->
+            <!-- BEGIN REGISTRATION FORM -->
+
+            <form class="register-form registr-wrapper" action="{{ register }}" method="post" novalidate="novalidate" style="display: none;">
+                <h3 class="font-green">Sign Up</h3>
+                <div class="alert alert-danger display-hide" style="display: none;">
+                    <button class="close" data-close="alert"></button>
+                    <span> Enter your email and password. </span>
+                </div>
+                <input type="hidden" name="ajax" value="true" />
+                <div class="form-group col-md-6 padding-2">
+                    <label class="control-label visible-ie8 visible-ie9">First Name</label>
+                    <input class="form-control placeholder-no-fix" type="text" placeholder="First Name" name="firstname">
+                </div>
+                <div class="form-group col-md-6 padding-2">
+                    <label class="control-label visible-ie8 visible-ie9">Last Name</label>
+                    <input class="form-control placeholder-no-fix" type="text" placeholder="Last Name" name="lastname">
+                </div>
+                <div class="form-group col-md-6 padding-2">
+                    <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                    <label class="control-label visible-ie8 visible-ie9">Email</label>
+                    <input class="form-control placeholder-no-fix" type="text" placeholder="Email" name="email"> </div>
+                <div class="form-group col-md-6 padding-2">
+                    <label class="control-label visible-ie8 visible-ie9">Telephone</label>
+                    <input class="form-control placeholder-no-fix" type="text" placeholder="Telephone" name="telephone">
+                </div>
+                <div class="form-group col-md-6 padding-2">
+                    <label class="control-label visible-ie8 visible-ie9">Password</label>
+                    <input class="form-control placeholder-no-fix" type="password" autocomplete="off" id="register_password" placeholder="Password" name="password"> </div>
+                <div class="form-group col-md-6 padding-2">
+                    <label class="control-label visible-ie8 visible-ie9">Re-type Your Password</label>
+                    <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Re-type Your Password" name="confirm"> </div>
+                <div class="form-group margin-top-20 margin-bottom-20">
+                    <label class="mt-checkbox mt-checkbox-outline">
+                        <input type="checkbox" name="agree"> I agree to the
+                        <a href="javascript:;">Terms of Service </a> &amp;
+                        <a href="javascript:;">Privacy Policy </a>
+                        <span></span>
+                    </label>
+                    <div id="register_tnc_error"> </div>
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="register-back-btn" class="btn green btn-outline">Back</button>
+                    <button type="button" id="register-submit-btn" class="btn btn-success uppercase pull-right">Submit</button>
+                </div>
+            </form>
+
+            <!-- END REGISTRATION FORM -->
+        </div>
+
+    </div>
+
+    <div id="loginModel" class="login modal fade overlay-checkIn overlayPopup" role="dialog">
+        <div class="close"></div>
+        <div class="content checkIn__popup">
+            <span class="close-popup closeBtn"></span>
+            <!-- BEGIN REGISTRATION FORM -->
+
+            <form class="register-form registr-wrapper" action="{{ register }}" method="post" novalidate="novalidate" style="display: none;">
+                <h3 class="font-green">Регистрация нового пользователя</h3>
+                <div class="alert alert-danger display-hide" style="display: none;">
+                    <button class="close" data-close="alert"></button>
+                    <span> Enter your email and password. </span>
+                </div>
+                <input type="hidden" name="ajax" value="true" />
+                <div class="flex-wrap">
+                    <div class="form-group col-md-6 padding-2 form-input">
+                        <label class="control-label visible-ie8 visible-ie9">Ваше имя*</label>
+                        <input class="form-control placeholder-no-fix" type="text" placeholder="" name="firstname"> </div>
+                    <div class="form-group col-md-6 padding-2 form-input">
+                        <label class="control-label visible-ie8 visible-ie9">Ваша Фамилия*</label>
+                        <input class="form-control placeholder-no-fix" type="text" placeholder="" name="lastname"> </div>
+                    <div class="form-group col-md-6 padding-2 form-input">
+                        <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                        <label class="control-label visible-ie8 visible-ie9">E-mail*</label>
+                        <input class="form-control placeholder-no-fix" type="text" placeholder="" name="email"> </div>
+                    <div class="form-group col-md-6 padding-2 form-input">
+                        <label class="control-label visible-ie8 visible-ie9">Телефон*</label>
+                        <input class="form-control placeholder-no-fix" type="text" placeholder="" name="telephone"> </div>
+                    <div class="form-group col-md-6 padding-2 form-input">
+                        <label class="control-label visible-ie8 visible-ie9">Пароль*</label>
+                        <input class="form-control placeholder-no-fix" type="password" autocomplete="off" id="register_password" placeholder="" name="password"> </div>
+                    <div class="form-group col-md-6 padding-2 form-input">
+                        <label class="control-label visible-ie8 visible-ie9">Повтор пароля*</label>
+                        <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="" name="confirm"> </div>
+                    <div class="form-group margin-top-20 margin-bottom-20 registr-security">
+                        <label class="mt-checkbox mt-checkbox-outline">
+                            <input type="checkbox" name="agree"> I agree to the
+                            <a href="javascript:;">Terms of Service </a> &amp;
+                            <a href="javascript:;">Privacy Policy </a>
+                            <span></span>
+                        </label>
+                        <div id="register_tnc_error"> </div>
+                    </div>
+                </div>
+                <div class="form-actions form-button">
+                    <button type="button" id="register-back-btn" class="btn green btn-outline btn-hide">Back</button>
+                    <button type="button" id="register-submit-btn" class="btn btn-success uppercase pull-right">Зарегистрироваться</button>
+                </div>
+            </form>
+
+            <!-- END REGISTRATION FORM -->
+        </div>
+
+    </div>
+
+    <div class="basket-popup">
+        <div class="basket-box">
+            <h3 class="basket-title">
+                Корзина
+            </h3>
+            <div class="basket-list swiper-container">
+                <ul class="swiper-wrapper dropdown-menu pull-right">
+                    <li class="swiper-slide">
+                        <div class="item__img">
+                            <a href="product-card.html" class="item__link"></a>
+                            <img src="../img/item1.png" alt="">
+                        </div>
+                        <div class="item__text">
+                            <a href="product-card.html">Moschino Funny</a>
+                            <h4>Туалетная вода</h4>
+                            <div class="item__price">
+                                <span>25 мл.</span>
+                                <span>4 500 руб.</span>
+                            </div>
+                            <div class="request__number">
+                                <a href="javascript:void(0)" class="minus">-</a>
+                                <input type="text" value="1" size="1">
+                                <a href="javascript:void(0)" class="plus">+</a>
+                                <a href="javascript:void(0)" class="request__close">
+                                    <img src="../img/close-1.png" alt="close">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="item__img">
+                            <a href="product-card.html" class="item__link"></a>
+                            <img src="../img/item2.png" alt="">
+
+                        </div>
+                        <div class="item__text">
+                            <a href="product-card.html">Moschino Funny</a>
+                            <h4>Туалетная вода</h4>
+                            <div class="item__price">
+                                <span>25 мл.</span>
+                                <span>4 500 руб.</span>
+                            </div>
+                            <div class="request__number">
+                                <a href="javascript:void(0)" class="minus">-</a>
+                                <input type="text" value="1" size="1">
+                                <a href="javascript:void(0)" class="plus">+</a>
+                                <a href="javascript:void(0)" class="request__close">
+                                    <img src="../img/close-1.png" alt="close">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="item__img">
+                            <a href="product-card.html" class="item__link"></a>
+                            <img src="../img/item1.png" alt="">
+
+                        </div>
+                        <div class="item__text">
+                            <a href="product-card.html">Moschino Funny</a>
+                            <h4>Туалетная вода</h4>
+                            <div class="item__price">
+                                <span>25 мл.</span>
+                                <span>4 500 руб.</span>
+                            </div>
+                            <div class="request__number">
+                                <a href="javascript:void(0)" class="minus">-</a>
+                                <input type="text" value="1" size="1">
+                                <a href="javascript:void(0)" class="plus">+</a>
+                                <a href="javascript:void(0)" class="request__close">
+                                    <img src="../img/close-1.png" alt="close">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="item__img">
+                            <a href="product-card.html" class="item__link"></a>
+                            <img src="../img/item2.png" alt="">
+
+                        </div>
+                        <div class="item__text">
+                            <a href="product-card.html">Moschino Funny</a>
+                            <h4>Туалетная вода</h4>
+                            <div class="item__price">
+                                <span>25 мл.</span>
+                                <span>4 500 руб.</span>
+                            </div>
+                            <div class="request__number">
+                                <a href="javascript:void(0)" class="minus">-</a>
+                                <input type="text" value="1" size="1">
+                                <a href="javascript:void(0)" class="plus">+</a>
+                                <a href="javascript:void(0)" class="request__close">
+                                    <img src="../img/close-1.png" alt="close">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="basket-sum">
+                <span>Итого:</span>
+                <span>9000 руб.</span>
+            </div>
+            <div class="basket-btn">
+                <a href="javascript:void(0)" class="continue-shopping js-basket-close">Продолжить покупку</a>
+                <a href="javascript:void(0)" class="checkout js-basket-close">Оформить заказ</a>
+            </div>
+            <a href="javascript:void(0)" class="basket__close js-basket-close">
+                <img src="../img/close-1.png" alt="close">
+            </a>
+        </div>
+
+    </div>
+
+    <section class="banner">
+        <div class="container">
+            <div class="swiperBanner swiper-container" data-playSpeed="5000">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url('../img/banner-slide.jpg');">
+                        <div class="banner__content">
+                            <h2>Federico Mahora</h2>
+                            <p>Скидка 10% на акционные товары Federico Mahora</p>
+                            <a href="stock-internal.html" class="more">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('../img/banner-slide.jpg');">
+                        <div class="banner__content">
+                            <h2>Federico Mahora</h2>
+                            <p>Скидка 10% на акционные товары Federico Mahora</p>
+                            <a href="stock-internal.html" class="more">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('../img/banner-slide.jpg');">
+                        <div class="banner__content">
+                            <h2>Federico Mahora</h2>
+                            <p>Скидка 10% на акционные товары Federico Mahora</p>
+                            <a href="stock-internal.html" class="more">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('../img/banner-slide.jpg');">
+                        <div class="banner__content">
+                            <h2>Federico Mahora</h2>
+                            <p>Скидка 10% на акционные товары Federico Mahora</p>
+                            <a href="stock-internal.html" class="more">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('../img/banner-slide.jpg');">
+                        <div class="banner__content">
+                            <h2>Federico Mahora</h2>
+                            <p>Скидка 10% на акционные товары Federico Mahora</p>
+                            <a href="stock-internal.html" class="more">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('../img/banner-slide.jpg');">
+                        <div class="banner__content">
+                            <h2>Federico Mahora</h2>
+                            <p>Скидка 10% на акционные товары Federico Mahora</p>
+                            <a href="stock-internal.html" class="more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-prev">
+                    <i class="icon-left"></i>
+                </div>
+                <div class="swiper-next">
+                    <i class="icon-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog">
+        <div class="container">
+            <div class="flex-wrap">
+                <div class="item" style="background-image: url('../img/banner1.jpg');">
+                    <a href="categories.html" class="catalog__link"></a>
+                    <p>Парфюмерия</p>
+                    <i class="icon-right"></i>
+                </div>
+                <div class="item" style="background-image: url('../img/banner2.jpg');">
+                    <a href="categories.html" class="catalog__link"></a>
+                    <p>Уход за лицом</p>
+                    <i class="icon-right"></i>
+                </div>
+                <div class="item" style="background-image: url('../img/banner3.jpg');">
+                    <a href="categories.html" class="catalog__link"></a>
+                    <p>Уход за телом</p>
+                    <i class="icon-right"></i>
+                </div>
+                <div class="item" style="background-image: url('../img/banner4.jpg');">
+                    <a href="categories.html" class="catalog__link"></a>
+                    <p>Ароматы для дома</p>
+                    <i class="icon-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="novelty">
+        <div class="container">
+            <h2>Новинки</h2>
+            <div class="swiperNovelty swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="item__img">
+                            <a href="product-card.html" class="item__link"></a>
+                            <img src="../img/item1.png" alt="">
+                            <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                        </div>
+                        <div class="item__text">
+                            <a href="product-card.html">Cocolady Black Crystal</a>
+                            <h4>Туалетная вода</h4>
+                            <p>4 500 руб.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item__img">
+                            <a href="product-card.html" class="item__link"></a>
+                            <img src="../img/item2.png" alt="">
+                            <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                        </div>
+                        <div class="item__text">
+                            <a href="product-card.html">Cocolady Black Crystal</a>
+                            <h4>Туалетная вода</h4>
+                            <p>4 500 руб.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item__img">
+                            <a href="product-card.html" class="item__link"></a>
+                            <img src="../img/item3.png" alt="">
+                            <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                        </div>
+                        <div class="item__text">
+                            <a href="product-card.html">Cocolady Black Crystal</a>
+                            <h4>Туалетная вода</h4>
+                            <p>4 500 руб.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item__img">
+                            <a href="product-card.html" class="item__link"></a>
+                            <img src="../img/item4.png" alt="">
+                            <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                        </div>
+                        <div class="item__text">
+                            <a href="product-card.html">Cocolady Black Crystal</a>
+                            <h4>Туалетная вода</h4>
+                            <p>4 500 руб.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item__img">
+                            <a href="product-card.html" class="item__link"></a>
+                            <img src="../img/item2.png" alt="">
+                            <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                        </div>
+                        <div class="item__text">
+                            <a href="product-card.html">Cocolady Black Crystal</a>
+                            <h4>Туалетная вода</h4>
+                            <p>4 500 руб.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="sw-button-prev">
+                    <i class="icon-left"></i>
+                </div>
+                <div class="sw-button-next">
+                    <i class="icon-right"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">Парфюмерия </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Уход за лицом </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Уход за телом </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Ароматы для дома </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Подарки и бонусы</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Доставка и оплата </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Акции и скидки </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__social">
+                    <p>Мы в соцсетях</p>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)"><i class="icon-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><i class="icon-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><i class="icon-vk"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="footer__copy">
+                    © Все права защищены, 2019
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+
+    <script src="../js/script.min.js"></script>
+    <script src="../js/home.min.js"></script>
+</body>
+
+</html>

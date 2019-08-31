@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Личный кабинет</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/personal-area.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="flex-wrap">
+                    <ul>
+                        <li>
+                            <a href="delivery.html">Доставка и оплата</a>
+                        </li>
+                        <li>
+                            <a href="stock.html">Акции и скидки</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="signIn">
+                        <a href="javascript:void(0)" class="open-signIn"><span>Кабинет</span> <i class="icon-man"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <div class="flex-wrap">
+                    <button class="toggle-menu">
+                        <span class="hamburger">
+                            <span class="sw-topper"></span>
+                            <span class="sw-bottom"></span>
+                            <span class="sw-footer"></span>
+                        </span>
+                    </button>
+                    <div class="header__logo">
+                        <a href="index.html">
+                            <img src="../img/logo.png" alt="logotype">
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <div class="form-input show" id="form-input">
+                            <input name="search" class="search-query" type="text">
+                            <button class="button"><i class="icon-search"></i></button>
+                        </div>
+                        <div class="showSearch"><i class="icon-search"></i></div>
+                    </div>
+                    <div class="header__menu">
+                        <div class="mobileClose"></div>
+                        <div class="wrapper">
+                            <a href="index.html" class="menu__logo">
+                                <img src="../img/logo-white.png" alt="logotype">
+                            </a>
+                            <nav>
+                                <ul>
+                                    <li>
+                                        <a href="categories.html">Парфюмерия </a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="categories.html">Женская парфюмерия</a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a href="categories.html">Новинки</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Распродажа!</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Наборы</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Миниатюры</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Пробники</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Тестеры</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Нишевая парфюмерия</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Арабская парфюмерия</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="categories.html">Мужская парфюмерия</a>
+                                                <ul class="sub-menu">
+                                                    <li>
+                                                        <a href="categories.html">Новинки</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Распродажа!</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Наборы</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Миниатюры</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Пробники</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Тестеры</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="categories.html">Нишевая парфюмерия</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="categories.html">Уход за лицом</a>
+                                    </li>
+                                    <li>
+                                        <a href="categories.html">Уход за телом</a>
+                                    </li>
+                                    <li>
+                                        <a href="categories.html">Ароматы для дома </a>
+                                    </li>
+                                    <li>
+                                        <a href="stock.html">Подарки и бонусы</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <ul class="innerMenu">
+                                <li>
+                                    <a href="javascript:void(0)">Акции и скидки</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__cart">
+                        <a href="javascript:void(0)" class="js-open-basket">
+                            <span class="label">Корзина</span>
+                            <i class="icon-cart"></i>
+                            <span class="cartAmount">3</span>
+                        </a>
+                    </div>
+                    <div class="signIn">
+                        <a href="javascript:void(0)" class="open-signIn"><i class="icon-man"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- popups -->
+    <!-- .closeBtn - закрывает попап -->
+    <!-- .open-* - открывает попап -->
+
+    <div id="loginModel" class="login modal fade overlay-signIn overlayPopup" role="dialog">
+        <div class="close"></div>
+        <div class="content signIn__popup">
+            <span class="close-popup closeBtn"></span>
+            <!-- BEGIN LOGIN FORM -->
+            <form class="login-form content-wrapper" action="{{ action }}" method="post" novalidate="novalidate" style="display: block;">
+
+                <h3 class="form-title font-green">Войти в личный кабинет</h3>
+                <div class="alert alert-danger display-hide" style="display: none;">
+                    <button class="close" data-close="alert"></button>
+                    <span> Enter your email and password. </span>
+                </div>
+                <input type="hidden" name="ajax" value="true" />
+                <div class="form-group form-input">
+                    <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                    <label class="control-label visible-ie8 visible-ie9"></label>
+                    <input class="form-control form-control-solid placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email"> </div>
+                <div class="form-group form-input">
+                    <label class="control-label visible-ie8 visible-ie9"></label>
+                    <input class="form-control form-control-solid placeholder-no-fix" type="password" autocomplete="off" placeholder="Пароль" name="password"> </div>
+                <div class="form-actions form-button">
+                    <button type="button" class="btn green uppercase" id="loginBtn">Войти</button>
+
+                </div>
+                <div class="create-account">
+                    <p class="form-bottom">
+                        <a href="javascript:;" id="forget-password" class="forget-password">Забыл пароль?</a>
+                        <a href="javascript:;" id="register-btn" class="uppercase closeBtn open-checkIn">Регистрация</a>
+                    </p>
+                </div>
+            </form>
+            <!-- END LOGIN FORM -->
+            <!-- BEGIN FORGOT PASSWORD FORM -->
+
+            <!-- <form class="forget-form" action="{{ forgotten }}" method="post" novalidate="novalidate">
+            <h3 class="font-green">Forget Password ?</h3>
+            <div class="alert alert-danger display-hide" style="display: none;">
+                <button class="close" data-close="alert"></button>
+                <span>  </span>
+            </div>
+            <div class="alert alert-success display-hide" style="display: none;">
+                <button class="close" data-close="alert"></button>
+                <span></span>
+            </div>
+            <input type="hidden" name="ajax" value="true"/>
+            <div class="form-group">
+                <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email"> </div>
+            <div class="form-actions">
+                <button type="button" id="back-btn" class="btn green btn-outline">Back</button>
+                <button type="submit" class="btn btn-success uppercase pull-right" id="forget-submit-btn">Submit</button>
+            </div>
+        </form> -->
+
+            <!-- END FORGOT PASSWORD FORM -->
+            <!-- BEGIN REGISTRATION FORM -->
+
+            <form class="register-form registr-wrapper" action="{{ register }}" method="post" novalidate="novalidate" style="display: none;">
+                <h3 class="font-green">Sign Up</h3>
+                <div class="alert alert-danger display-hide" style="display: none;">
+                    <button class="close" data-close="alert"></button>
+                    <span> Enter your email and password. </span>
+                </div>
+                <input type="hidden" name="ajax" value="true" />
+                <div class="form-group col-md-6 padding-2">
+                    <label class="control-label visible-ie8 visible-ie9">First Name</label>
+                    <input class="form-control placeholder-no-fix" type="text" placeholder="First Name" name="firstname">
+                </div>
+                <div class="form-group col-md-6 padding-2">
+                    <label class="control-label visible-ie8 visible-ie9">Last Name</label>
+                    <input class="form-control placeholder-no-fix" type="text" placeholder="Last Name" name="lastname">
+                </div>
+                <div class="form-group col-md-6 padding-2">
+                    <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                    <label class="control-label visible-ie8 visible-ie9">Email</label>
+                    <input class="form-control placeholder-no-fix" type="text" placeholder="Email" name="email"> </div>
+                <div class="form-group col-md-6 padding-2">
+                    <label class="control-label visible-ie8 visible-ie9">Telephone</label>
+                    <input class="form-control placeholder-no-fix" type="text" placeholder="Telephone" name="telephone">
+                </div>
+                <div class="form-group col-md-6 padding-2">
+                    <label class="control-label visible-ie8 visible-ie9">Password</label>
+                    <input class="form-control placeholder-no-fix" type="password" autocomplete="off" id="register_password" placeholder="Password" name="password"> </div>
+                <div class="form-group col-md-6 padding-2">
+                    <label class="control-label visible-ie8 visible-ie9">Re-type Your Password</label>
+                    <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Re-type Your Password" name="confirm"> </div>
+                <div class="form-group margin-top-20 margin-bottom-20">
+                    <label class="mt-checkbox mt-checkbox-outline">
+                        <input type="checkbox" name="agree"> I agree to the
+                        <a href="javascript:;">Terms of Service </a> &amp;
+                        <a href="javascript:;">Privacy Policy </a>
+                        <span></span>
+                    </label>
+                    <div id="register_tnc_error"> </div>
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="register-back-btn" class="btn green btn-outline">Back</button>
+                    <button type="button" id="register-submit-btn" class="btn btn-success uppercase pull-right">Submit</button>
+                </div>
+            </form>
+
+            <!-- END REGISTRATION FORM -->
+        </div>
+
+    </div>
+
+    <div id="loginModel" class="login modal fade overlay-checkIn overlayPopup" role="dialog">
+        <div class="close"></div>
+        <div class="content checkIn__popup">
+            <span class="close-popup closeBtn"></span>
+            <!-- BEGIN REGISTRATION FORM -->
+
+            <form class="register-form registr-wrapper" action="{{ register }}" method="post" novalidate="novalidate" style="display: none;">
+                <h3 class="font-green">Регистрация нового пользователя</h3>
+                <div class="alert alert-danger display-hide" style="display: none;">
+                    <button class="close" data-close="alert"></button>
+                    <span> Enter your email and password. </span>
+                </div>
+                <input type="hidden" name="ajax" value="true" />
+                <div class="flex-wrap">
+                    <div class="form-group col-md-6 padding-2 form-input">
+                        <label class="control-label visible-ie8 visible-ie9">Ваше имя*</label>
+                        <input class="form-control placeholder-no-fix" type="text" placeholder="" name="firstname"> </div>
+                    <div class="form-group col-md-6 padding-2 form-input">
+                        <label class="control-label visible-ie8 visible-ie9">Ваша Фамилия*</label>
+                        <input class="form-control placeholder-no-fix" type="text" placeholder="" name="lastname"> </div>
+                    <div class="form-group col-md-6 padding-2 form-input">
+                        <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+                        <label class="control-label visible-ie8 visible-ie9">E-mail*</label>
+                        <input class="form-control placeholder-no-fix" type="text" placeholder="" name="email"> </div>
+                    <div class="form-group col-md-6 padding-2 form-input">
+                        <label class="control-label visible-ie8 visible-ie9">Телефон*</label>
+                        <input class="form-control placeholder-no-fix" type="text" placeholder="" name="telephone"> </div>
+                    <div class="form-group col-md-6 padding-2 form-input">
+                        <label class="control-label visible-ie8 visible-ie9">Пароль*</label>
+                        <input class="form-control placeholder-no-fix" type="password" autocomplete="off" id="register_password" placeholder="" name="password"> </div>
+                    <div class="form-group col-md-6 padding-2 form-input">
+                        <label class="control-label visible-ie8 visible-ie9">Повтор пароля*</label>
+                        <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="" name="confirm"> </div>
+                    <div class="form-group margin-top-20 margin-bottom-20 registr-security">
+                        <label class="mt-checkbox mt-checkbox-outline">
+                            <input type="checkbox" name="agree"> I agree to the
+                            <a href="javascript:;">Terms of Service </a> &amp;
+                            <a href="javascript:;">Privacy Policy </a>
+                            <span></span>
+                        </label>
+                        <div id="register_tnc_error"> </div>
+                    </div>
+                </div>
+                <div class="form-actions form-button">
+                    <button type="button" id="register-back-btn" class="btn green btn-outline btn-hide">Back</button>
+                    <button type="button" id="register-submit-btn" class="btn btn-success uppercase pull-right">Зарегистрироваться</button>
+                </div>
+            </form>
+
+            <!-- END REGISTRATION FORM -->
+        </div>
+
+    </div>
+
+    <div class="basket-popup">
+        <div class="basket-box">
+            <h3 class="basket-title">
+                Корзина
+            </h3>
+            <div class="basket-list swiper-container">
+                <ul class="swiper-wrapper dropdown-menu pull-right">
+                    <li class="swiper-slide">
+                        <div class="item__img">
+                            <a href="product-card.html" class="item__link"></a>
+                            <img src="../img/item1.png" alt="">
+                        </div>
+                        <div class="item__text">
+                            <a href="product-card.html">Moschino Funny</a>
+                            <h4>Туалетная вода</h4>
+                            <div class="item__price">
+                                <span>25 мл.</span>
+                                <span>4 500 руб.</span>
+                            </div>
+                            <div class="request__number">
+                                <a href="javascript:void(0)" class="minus">-</a>
+                                <input type="text" value="1" size="1">
+                                <a href="javascript:void(0)" class="plus">+</a>
+                                <a href="javascript:void(0)" class="request__close">
+                                    <img src="../img/close-1.png" alt="close">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="item__img">
+                            <a href="product-card.html" class="item__link"></a>
+                            <img src="../img/item2.png" alt="">
+
+                        </div>
+                        <div class="item__text">
+                            <a href="product-card.html">Moschino Funny</a>
+                            <h4>Туалетная вода</h4>
+                            <div class="item__price">
+                                <span>25 мл.</span>
+                                <span>4 500 руб.</span>
+                            </div>
+                            <div class="request__number">
+                                <a href="javascript:void(0)" class="minus">-</a>
+                                <input type="text" value="1" size="1">
+                                <a href="javascript:void(0)" class="plus">+</a>
+                                <a href="javascript:void(0)" class="request__close">
+                                    <img src="../img/close-1.png" alt="close">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="item__img">
+                            <a href="product-card.html" class="item__link"></a>
+                            <img src="../img/item1.png" alt="">
+
+                        </div>
+                        <div class="item__text">
+                            <a href="product-card.html">Moschino Funny</a>
+                            <h4>Туалетная вода</h4>
+                            <div class="item__price">
+                                <span>25 мл.</span>
+                                <span>4 500 руб.</span>
+                            </div>
+                            <div class="request__number">
+                                <a href="javascript:void(0)" class="minus">-</a>
+                                <input type="text" value="1" size="1">
+                                <a href="javascript:void(0)" class="plus">+</a>
+                                <a href="javascript:void(0)" class="request__close">
+                                    <img src="../img/close-1.png" alt="close">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="item__img">
+                            <a href="product-card.html" class="item__link"></a>
+                            <img src="../img/item2.png" alt="">
+
+                        </div>
+                        <div class="item__text">
+                            <a href="product-card.html">Moschino Funny</a>
+                            <h4>Туалетная вода</h4>
+                            <div class="item__price">
+                                <span>25 мл.</span>
+                                <span>4 500 руб.</span>
+                            </div>
+                            <div class="request__number">
+                                <a href="javascript:void(0)" class="minus">-</a>
+                                <input type="text" value="1" size="1">
+                                <a href="javascript:void(0)" class="plus">+</a>
+                                <a href="javascript:void(0)" class="request__close">
+                                    <img src="../img/close-1.png" alt="close">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="basket-sum">
+                <span>Итого:</span>
+                <span>9000 руб.</span>
+            </div>
+            <div class="basket-btn">
+                <a href="javascript:void(0)" class="continue-shopping js-basket-close">Продолжить покупку</a>
+                <a href="javascript:void(0)" class="checkout js-basket-close">Оформить заказ</a>
+            </div>
+            <a href="javascript:void(0)" class="basket__close js-basket-close">
+                <img src="../img/close-1.png" alt="close">
+            </a>
+        </div>
+
+    </div>
+
+    <div class="bread-crumbs">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><span>Личный кабинет</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="personal-area">
+        <div class="container">
+            <div class="personal-area__title">
+                <h2>
+                    Личный кабинет
+                </h2>
+            </div>
+            <div class="accordion-wrapper">
+                <div class="information-wrapper">
+                    <div class="information-btn">
+                        <a class="js-inform-btn inform-btn-active" href="javascript:void(0)">Контактная информация</a>
+                    </div>
+                    <div class="information-content information-content-active">
+                        <form action="" class="form-information">
+                            <div class="form-col-1">
+                                <h4 class="information-title">
+                                    Редактирование личных данных
+                                </h4>
+                                <div class="form-item">
+                                    <label for="">Ваше имя</label>
+                                    <input type="text" placeholder="Инна" class="form-name">
+                                </div>
+                                <div class="form-item">
+                                    <label for="">Ваша фамилия</label>
+                                    <input type="text" placeholder="Иванова" class="form-surname">
+                                </div>
+                                <div class="form-item">
+                                    <label for="">E-mail / логин</label>
+                                    <input type="text" placeholder="inna@mail.ru" class="form-login">
+                                </div>
+                            </div>
+                            <div class="form-col-2">
+                                <div class="form-item">
+                                    <label for="">Дата рождения</label>
+                                    <input type="text" placeholder="21.05.1988" class="form-date">
+                                </div>
+                                <div class="form-item">
+                                    <label for="">Телефон</label>
+                                    <input type="text" placeholder="+7 (123) 456 78 93" class="form-phone">
+                                </div>
+                            </div>
+                            <div class="form-col-3">
+                                <h4 class="information-title">Изменение пароля</h4>
+                                <div class="form-item">
+                                    <label for="">Старый пароль</label>
+                                    <input type="text" class="form-oldPass">
+                                </div>
+                                <div class="form-item">
+                                    <label for="">Новый пароль</label>
+                                    <input type="text" class="form-newPass">
+                                </div>
+                                <div class="form-item">
+                                    <label for="">Подтверждение пароля</label>
+                                    <input type="text" class="form-newPass">
+                                </div>
+                                <button type="submit">Сохранить</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="history-wrapper">
+                    <div class="history-btn">
+                        <a class="js-history-btn" href="javascript:void(0)">История заказов</a>
+                    </div>
+                    <div class="history-content">
+                        <div class="sorting__wrapper">
+                            <div class="sorting__mobile">
+                                <button class="sotring__btn js-open-popup">Сортировать</button>
+                                <ul class="sorting__list">
+                                    <li class="sorting__item">
+                                        <span>Период</span>
+                                        <button class="js-close-popup">
+                                            <img src="../img/close.png" alt="close">
+                                        </button>
+                                    </li>
+                                    <li class="sorting__item" data-sorting="name">
+                                        <a href="javascript:void(0)" class="js-popup-link">
+                                            <span>все</span> <i class="icon-correct"></i>
+                                        </a>
+                                    </li>
+                                    <li class="sorting__item sorting__item--active" data-sorting="price">
+                                        <a href="javascript:void(0)" class="js-popup-link">
+                                            <span>за этот месяц</span> <i class="icon-correct"></i>
+                                        </a>
+                                    </li>
+                                    <li class="sorting__item" data-sorting="popularity">
+                                        <a href="javascript:void(0)" class="js-popup-link">
+                                            <span>за прошлый месяц</span> <i class="icon-correct"></i>
+                                        </a>
+                                    </li>
+                                    <li class="sorting__item" data-sorting="popularity">
+                                        <a href="javascript:void(0)" class="js-popup-link">
+                                            <span>за этот год</span> <i class="icon-correct"></i>
+                                        </a>
+                                    </li>
+                                    <li class="sorting__item" data-sorting="popularity">
+                                        <a href="javascript:void(0)" class="js-popup-link">
+                                            <span>за прошлый год</span> <i class="icon-correct"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="sorting__menu-desktop">
+                                <li class="label">
+                                    Период
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0)">все</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">за этот месяц</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">за прошлый месяц</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">за этот год</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">за прошлый год</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="order">
+                            <div class="order-title">
+                                <span>Заказ:</span>
+                                <span class="order-number">1234567</span>
+                                <span class="order-date">21.05.2019</span>
+                            </div>
+                            <div class="order-item">
+                                <div class="item__img">
+                                    <a href="product-card.html" class="item__link"></a>
+                                    <img src="../img/item1.png" alt="">
+                                    <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                                </div>
+                                <div class="item__text">
+                                    <a href="product-card.html">Cocolady Black Crystal</a>
+                                    <h4>Туалетная вода</h4>
+                                    <div class="item__price">
+                                        <span>1 шт</span>
+                                        <span>4 500 руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-item">
+                                <div class="item__img">
+                                    <a href="product-card.html" class="item__link"></a>
+                                    <img src="../img/item2.png" alt="">
+                                    <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                                </div>
+                                <div class="item__text">
+                                    <a href="product-card.html">Cocolady Black Crystal</a>
+                                    <h4>Туалетная вода</h4>
+                                    <div class="item__price">
+                                        <span>1 шт</span>
+                                        <span>4 500 руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-item">
+                                <div class="item__img">
+                                    <a href="product-card.html" class="item__link"></a>
+                                    <img src="../img/item3.png" alt="">
+                                    <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                                </div>
+                                <div class="item__text">
+                                    <a href="product-card.html">Cocolady Black Crystal</a>
+                                    <h4>Туалетная вода</h4>
+                                    <div class="item__price">
+                                        <span>1 шт</span>
+                                        <span>4 500 руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-cost">
+                                <span>Всего:</span>
+                                <span>15 0000 руб.</span>
+                            </div>
+                        </div>
+                        <div class="order">
+                            <div class="order-title">
+                                <span>Заказ:</span>
+                                <span class="order-number">1234567</span>
+                                <span class="order-date">21.05.2019</span>
+                            </div>
+                            <div class="order-item">
+                                <div class="item__img">
+                                    <a href="product-card.html" class="item__link"></a>
+                                    <img src="../img/item1.png" alt="">
+                                    <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                                </div>
+                                <div class="item__text">
+                                    <a href="product-card.html">Cocolady Black Crystal</a>
+                                    <h4>Туалетная вода</h4>
+                                    <div class="item__price">
+                                        <span>1 шт</span>
+                                        <span>4 500 руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-item">
+                                <div class="item__img">
+                                    <a href="product-card.html" class="item__link"></a>
+                                    <img src="../img/item2.png" alt="">
+                                    <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                                </div>
+                                <div class="item__text">
+                                    <a href="product-card.html">Cocolady Black Crystal</a>
+                                    <h4>Туалетная вода</h4>
+                                    <div class="item__price">
+                                        <span>1 шт</span>
+                                        <span>4 500 руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-item">
+                                <div class="item__img">
+                                    <a href="product-card.html" class="item__link"></a>
+                                    <img src="../img/item3.png" alt="">
+                                    <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                                </div>
+                                <div class="item__text">
+                                    <a href="product-card.html">Cocolady Black Crystal</a>
+                                    <h4>Туалетная вода</h4>
+                                    <div class="item__price">
+                                        <span>1 шт</span>
+                                        <span>4 500 руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-cost">
+                                <span>Всего:</span>
+                                <span>15 0000 руб.</span>
+                            </div>
+                        </div>
+                        <div class="order__pagination">
+                            <ul class="pagination__list">
+                                <li class="pagination__item">
+                                    <a href="javascript:void(0)">
+                                        <i class="icon-left"></i>
+                                        <i class="icon-left"></i>
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="javascript:void(0)">
+                                        1
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="javascript:void(0)">
+                                        2
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="javascript:void(0)">
+                                        3
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="javascript:void(0)">
+                                        4
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="javascript:void(0)">
+                                        5
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="javascript:void(0)">
+                                        ...
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="javascript:void(0)">
+                                        10
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="javascript:void(0)">
+                                        <i class="icon-right"></i>
+                                        <i class="icon-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="bonus-wrapper">
+                    <div class="bonus-btn">
+                        <a class="js-bonus-btn" href="javascript:void(0)">Бонусная система</a>
+                    </div>
+                    <div class="bonus-content">
+                        <div class="bonus-col-1">
+                            <div class="bonus-title">
+                                <h4>
+                                    Бонусный клуб AZIONE
+                                </h4>
+                            </div>
+                            <div class="bonus-description">
+                                <p>
+                                    Бонусный Клуб Azione позволяет накапливать на личном счете бонусы за сделанные
+                                    заказы и расплачиваться ими при совершении следующих покупок в Azione. Бонусы
+                                    начисляются на товары Azione, оплаченные деньгами. На оплаченную бонусами часть
+                                    заказа бонусы не начисляются.
+                                </p>
+                                <p>
+                                    Один бонус равен одному рублю.
+                                </p>
+                                <p>
+                                    Бонусный Клуб Azione состоит из семи уровней, для каждого из которых установлена
+                                    общая сумма накоплений и уровень бонусных отчислений. Все расчеты производятся
+                                    автоматически, данные об общей сумме накоплений и размере бонусных отчислений
+                                    отображаются в «Личном кабинете».
+                                </p>
+                            </div>
+                            <ul class="bonus-list">
+                                <li class="bonus-item">
+                                    <span>
+                                        Сумма всех заказов от 1 000 до 3 000 рублей
+                                    </span>
+                                    <span>
+                                        1%
+                                    </span>
+                                </li>
+                                <li class="bonus-item">
+                                    <span>
+                                        Сумма всех заказов от 3 000 до 7 000 рублей
+                                    </span>
+                                    <span>
+                                        3%
+                                    </span>
+                                </li>
+                                <li class="bonus-item">
+                                    <span>
+                                        Сумма всех заказов от 7 001 до 15 000 рублей
+                                    </span>
+                                    <span>
+                                        5%
+                                    </span>
+                                </li>
+                                <li class="bonus-item">
+                                    <span>
+                                        Сумма всех заказов от 15 001 до 30 000 рублей
+                                    </span>
+                                    <span>
+                                        7%
+                                    </span>
+                                </li>
+                                <li class="bonus-item">
+                                    <span>
+                                        Сумма всех заказов от 30 001 до 50 000 рублей
+                                    </span>
+                                    <span>
+                                        10%
+                                    </span>
+                                </li>
+                                <li class="bonus-item">
+                                    <span>
+                                        Сумма всех заказов от 50 000 до 80 000 рублей
+                                    </span>
+                                    <span>
+                                        13%
+                                    </span>
+                                </li>
+                                <li class="bonus-item">
+                                    <span>
+                                        Сумма всех заказов от 80 001 рублей
+                                    </span>
+                                    <span>
+                                        15%
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bonus-col-2 bonus-description">
+                            <p>
+                                При оформлении первого заказа, уровень бонусов считается поступательно.
+                            </p>
+                            <p>
+                                Например: при оформлении первого заказа на 15 000 рублей на ваш бонусный счет будет
+                                начислено:
+                                <span>
+                                    За 1 000 рублей – 0% - 0 бонусов
+                                </span>
+                                <span>
+                                    За 2 000 рублей – 1% - 20 бонусов
+                                </span>
+                                <span>
+                                    За 4 000 рублей – 3% - 120 бонусов
+                                </span>
+                                <span>
+                                    За 8 000 рублей – 5% - 400 бонусов
+                                </span>
+                                <span>
+                                    Итого: 540 бонусов.
+                                </span>
+                            </p>
+                            <p>
+                                Для всех последующих заказов будет действовать соответствующая ступень, в нашем примере
+                                с заказом на 15 000 рублей – это 5%.
+                            </p>
+                            <p>
+                                Воспользоваться бонусами можно при оформлении заказа на товары Azione, введя в
+                                соответствующее поле количество бонусов, которыми вы хотели бы расплатиться. Оплатить
+                                бонусами можно всю сумму заказа минус один рубль. Стоимость доставки не может быть
+                                оплачена бонусами.
+                            </p>
+                            <p>
+                                На товары, участвующие в акциях, бонусные баллы не начисляются.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="tab-wrapper">
+                <div class="tab-btn-wrapper">
+                    <div class="information-btn">
+                        <a class="js-tab-item tabs__btn--active" href="javascript:void(0)" data-content="information">Контактная информация</a>
+                    </div>
+                    <div class="history-btn">
+                        <a class="js-tab-item" href="javascript:void(0)" data-content="history">История заказов</a>
+                    </div>
+                    <div class="bonus-btn">
+                        <a class="js-tab-item" href="javascript:void(0)" data-content="bonus">Бонусная система</a>
+                    </div>
+                </div>
+                <div class="tab-content-wraper">
+                    <div id="content-information" class="information-content js-content-item content__item--active">
+                        <form action="" class="form-information">
+                            <div class="form-col-1">
+                                <h4 class="information-title">
+                                    Редактирование личных данных
+                                </h4>
+                                <div class="form-item">
+                                    <label for="">Ваше имя</label>
+                                    <input type="text" placeholder="Инна" class="form-name">
+                                </div>
+                                <div class="form-item">
+                                    <label for="">Ваша фамилия</label>
+                                    <input type="text" placeholder="Иванова" class="form-surname">
+                                </div>
+                                <div class="form-item">
+                                    <label for="">E-mail / логин</label>
+                                    <input type="text" placeholder="inna@mail.ru" class="form-login">
+                                </div>
+                            </div>
+                            <div class="form-col-2">
+                                <div class="form-item">
+                                    <label for="">Дата рождения</label>
+                                    <input type="text" placeholder="21.05.1988" class="form-date">
+                                </div>
+                                <div class="form-item">
+                                    <label for="">Телефон</label>
+                                    <input type="text" placeholder="+7 (123) 456 78 93" class="form-phone">
+                                </div>
+                            </div>
+                            <div class="form-col-3">
+                                <h4 class="information-title">Изменение пароля</h4>
+                                <div class="form-item">
+                                    <label for="">Старый пароль</label>
+                                    <input type="text" class="form-oldPass">
+                                </div>
+                                <div class="form-item">
+                                    <label for="">Новый пароль</label>
+                                    <input type="text" class="form-newPass">
+                                </div>
+                                <div class="form-item">
+                                    <label for="">Подтверждение пароля</label>
+                                    <input type="text" class="form-newPass">
+                                </div>
+                                <button type="submit">Сохранить</button>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div id="content-history" class="history-content js-content-item">
+                        <div class="sorting__wrapper">
+                            <div class="sorting__mobile">
+                                <button class="sotring__btn js-open-popup">Сортировать</button>
+                                <ul class="sorting__list">
+                                    <li class="sorting__item">
+                                        <span>Период</span>
+                                        <button class="js-close-popup">
+                                            <img src="../img/close.png" alt="close">
+                                        </button>
+                                    </li>
+                                    <li class="sorting__item" data-sorting="name">
+                                        <a href="javascript:void(0)" class="js-popup-link">
+                                            <span>все</span> <i class="icon-correct"></i>
+                                        </a>
+                                    </li>
+                                    <li class="sorting__item sorting__item--active" data-sorting="price">
+                                        <a href="javascript:void(0)" class="js-popup-link">
+                                            <span>за этот месяц</span> <i class="icon-correct"></i>
+                                        </a>
+                                    </li>
+                                    <li class="sorting__item" data-sorting="popularity">
+                                        <a href="javascript:void(0)" class="js-popup-link">
+                                            <span>за прошлый месяц</span> <i class="icon-correct"></i>
+                                        </a>
+                                    </li>
+                                    <li class="sorting__item" data-sorting="popularity">
+                                        <a href="javascript:void(0)" class="js-popup-link">
+                                            <span>за этот год</span> <i class="icon-correct"></i>
+                                        </a>
+                                    </li>
+                                    <li class="sorting__item" data-sorting="popularity">
+                                        <a href="javascript:void(0)" class="js-popup-link">
+                                            <span>за прошлый год</span> <i class="icon-correct"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="sorting__menu-desktop">
+                                <li class="label">
+                                    Период
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0)">все</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">за этот месяц</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">за прошлый месяц</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">за этот год</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">за прошлый год</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="order">
+                            <div class="order-title">
+                                <span>Заказ:</span>
+                                <span class="order-number">1234567</span>
+                                <span class="order-date">21.05.2019</span>
+                            </div>
+                            <div class="order-item">
+                                <div class="item__img">
+                                    <a href="product-card.html" class="item__link"></a>
+                                    <img src="../img/item1.png" alt="">
+                                    <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                                </div>
+                                <div class="item__text">
+                                    <a href="product-card.html">Cocolady Black Crystal</a>
+                                    <h4>Туалетная вода</h4>
+                                    <div class="item__price">
+                                        <span>1 шт</span>
+                                        <span>4 500 руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-item">
+                                <div class="item__img">
+                                    <a href="product-card.html" class="item__link"></a>
+                                    <img src="../img/item2.png" alt="">
+                                    <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                                </div>
+                                <div class="item__text">
+                                    <a href="product-card.html">Cocolady Black Crystal</a>
+                                    <h4>Туалетная вода</h4>
+                                    <div class="item__price">
+                                        <span>1 шт</span>
+                                        <span>4 500 руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-item">
+                                <div class="item__img">
+                                    <a href="product-card.html" class="item__link"></a>
+                                    <img src="../img/item3.png" alt="">
+                                    <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                                </div>
+                                <div class="item__text">
+                                    <a href="product-card.html">Cocolady Black Crystal</a>
+                                    <h4>Туалетная вода</h4>
+                                    <div class="item__price">
+                                        <span>1 шт</span>
+                                        <span>4 500 руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-cost">
+                                <span>Всего:</span>
+                                <span>15 0000 руб.</span>
+                            </div>
+                        </div>
+                        <div class="order">
+                            <div class="order-title">
+                                <span>Заказ:</span>
+                                <span class="order-number">1234567</span>
+                                <span class="order-date">21.05.2019</span>
+                            </div>
+                            <div class="order-item">
+                                <div class="item__img">
+                                    <a href="product-card.html" class="item__link"></a>
+                                    <img src="../img/item1.png" alt="">
+                                    <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                                </div>
+                                <div class="item__text">
+                                    <a href="product-card.html">Cocolady Black Crystal</a>
+                                    <h4>Туалетная вода</h4>
+                                    <div class="item__price">
+                                        <span>1 шт</span>
+                                        <span>4 500 руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-item">
+                                <div class="item__img">
+                                    <a href="product-card.html" class="item__link"></a>
+                                    <img src="../img/item2.png" alt="">
+                                    <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                                </div>
+                                <div class="item__text">
+                                    <a href="product-card.html">Cocolady Black Crystal</a>
+                                    <h4>Туалетная вода</h4>
+                                    <div class="item__price">
+                                        <span>1 шт</span>
+                                        <span>4 500 руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-item">
+                                <div class="item__img">
+                                    <a href="product-card.html" class="item__link"></a>
+                                    <img src="../img/item3.png" alt="">
+                                    <a href="javascript:void(0)" class="addCart"><i class="icon-cart"></i></a>
+                                </div>
+                                <div class="item__text">
+                                    <a href="product-card.html">Cocolady Black Crystal</a>
+                                    <h4>Туалетная вода</h4>
+                                    <div class="item__price">
+                                        <span>1 шт</span>
+                                        <span>4 500 руб.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-cost">
+                                <span>Всего:</span>
+                                <span>15 0000 руб.</span>
+                            </div>
+                        </div>
+                        <div class="order__pagination">
+                            <ul class="pagination__list">
+                                <li class="pagination__item">
+                                    <a href="javascript:void(0)">
+                                        <i class="icon-left"></i>
+                                        <i class="icon-left"></i>
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="javascript:void(0)">
+                                        1
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="javascript:void(0)">
+                                        2
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="javascript:void(0)">
+                                        3
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="javascript:void(0)">
+                                        4
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="javascript:void(0)">
+                                        5
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="javascript:void(0)">
+                                        ...
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="javascript:void(0)">
+                                        10
+                                    </a>
+                                </li>
+                                <li class="pagination__item">
+                                    <a href="javascript:void(0)">
+                                        <i class="icon-right"></i>
+                                        <i class="icon-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="content-bonus" class="bonus-content js-content-item">
+                        <div class="bonus-wrapper">
+                            <div class="bonus-col-1">
+                                <div class="bonus-title">
+                                    <h4>
+                                        Бонусный клуб AZIONE
+                                    </h4>
+                                </div>
+                                <div class="bonus-description">
+                                    <p>
+                                        Бонусный Клуб Azione позволяет накапливать на личном счете бонусы за сделанные
+                                        заказы и расплачиваться ими при совершении следующих покупок в Azione. Бонусы
+                                        начисляются на товары Azione, оплаченные деньгами. На оплаченную бонусами часть
+                                        заказа бонусы не начисляются.
+                                    </p>
+                                    <p>
+                                        Один бонус равен одному рублю.
+                                    </p>
+                                    <p>
+                                        Бонусный Клуб Azione состоит из семи уровней, для каждого из которых установлена
+                                        общая сумма накоплений и уровень бонусных отчислений. Все расчеты производятся
+                                        автоматически, данные об общей сумме накоплений и размере бонусных отчислений
+                                        отображаются в «Личном кабинете».
+                                    </p>
+                                </div>
+                                <ul class="bonus-list">
+                                    <li class="bonus-item">
+                                        <span>
+                                            Сумма всех заказов от 1 000 до 3 000 рублей
+                                        </span>
+                                        <span>
+                                            1%
+                                        </span>
+                                    </li>
+                                    <li class="bonus-item">
+                                        <span>
+                                            Сумма всех заказов от 3 000 до 7 000 рублей
+                                        </span>
+                                        <span>
+                                            3%
+                                        </span>
+                                    </li>
+                                    <li class="bonus-item">
+                                        <span>
+                                            Сумма всех заказов от 7 001 до 15 000 рублей
+                                        </span>
+                                        <span>
+                                            5%
+                                        </span>
+                                    </li>
+                                    <li class="bonus-item">
+                                        <span>
+                                            Сумма всех заказов от 15 001 до 30 000 рублей
+                                        </span>
+                                        <span>
+                                            7%
+                                        </span>
+                                    </li>
+                                    <li class="bonus-item">
+                                        <span>
+                                            Сумма всех заказов от 30 001 до 50 000 рублей
+                                        </span>
+                                        <span>
+                                            10%
+                                        </span>
+                                    </li>
+                                    <li class="bonus-item">
+                                        <span>
+                                            Сумма всех заказов от 50 000 до 80 000 рублей
+                                        </span>
+                                        <span>
+                                            13%
+                                        </span>
+                                    </li>
+                                    <li class="bonus-item">
+                                        <span>
+                                            Сумма всех заказов от 80 001 рублей
+                                        </span>
+                                        <span>
+                                            15%
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bonus-col-2 bonus-description">
+                                <p>
+                                    При оформлении первого заказа, уровень бонусов считается поступательно.
+                                </p>
+                                <p>
+                                    Например: при оформлении первого заказа на 15 000 рублей на ваш бонусный счет будет
+                                    начислено:
+                                    <span>
+                                        За 1 000 рублей – 0% - 0 бонусов
+                                    </span>
+                                    <span>
+                                        За 2 000 рублей – 1% - 20 бонусов
+                                    </span>
+                                    <span>
+                                        За 4 000 рублей – 3% - 120 бонусов
+                                    </span>
+                                    <span>
+                                        За 8 000 рублей – 5% - 400 бонусов
+                                    </span>
+                                    <span>
+                                        Итого: 540 бонусов.
+                                    </span>
+                                </p>
+                                <p>
+                                    Для всех последующих заказов будет действовать соответствующая ступень, в нашем примере
+                                    с заказом на 15 000 рублей – это 5%.
+                                </p>
+                                <p>
+                                    Воспользоваться бонусами можно при оформлении заказа на товары Azione, введя в
+                                    соответствующее поле количество бонусов, которыми вы хотели бы расплатиться. Оплатить
+                                    бонусами можно всю сумму заказа минус один рубль. Стоимость доставки не может быть
+                                    оплачена бонусами.
+                                </p>
+                                <p>
+                                    На товары, участвующие в акциях, бонусные баллы не начисляются.
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">Парфюмерия </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Уход за лицом </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Уход за телом </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Ароматы для дома </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Подарки и бонусы</a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Доставка и оплата </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Акции и скидки </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__social">
+                    <p>Мы в соцсетях</p>
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)"><i class="icon-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><i class="icon-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)"><i class="icon-vk"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="footer__copy">
+                    © Все права защищены, 2019
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+
+
+    <script src="../js/script.min.js"></script>
+    <script src="../js/personal-area.min.js"></script>
+</body>
+
+</html>
